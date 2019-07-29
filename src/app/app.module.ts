@@ -10,8 +10,11 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { PreciosComponent } from './components/precios/precios.component';
 import { ProtegidaComponent } from'./components/protegida/protegida.component';
 
+// importar rutas
+import { APP_ROUTING } from "./app.routes";
+
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
+  imports:      [ BrowserModule, FormsModule, APP_ROUTING ],
   declarations: [ AppComponent, HelloComponent, HomeComponent,NavbarComponent, PreciosComponent, ProtegidaComponent],
   bootstrap:    [ AppComponent ]
 })
